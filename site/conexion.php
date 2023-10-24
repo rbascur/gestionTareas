@@ -15,5 +15,5 @@ $conexion = new mysqli($host, $usuario, $contrasena, $base_de_datos);
     echo "Conectado a la base de datos.";
 }*/
 
-//$conexion->close();
+//$conexion->close(); // Esto se usara desde otras archivos
 ?>

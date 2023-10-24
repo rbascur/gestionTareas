@@ -10,8 +10,22 @@ if (!isset($_SESSION['id_usuario'])) {
     echo "<a href='login.php'>Iniciar Sesión</a> | <a href='registro.php'>Registrarse</a>";
     exit(); // Detiene la ejecución del resto de la página
 }
+ //------------
+ $id_usuario = $_SESSION['id_usuario'];
 
-// El usuario está autenticado, obtenemos sus tareas
+// Consultar el nombre del usuario para Bienvenida
+$query = "SELECT nombres FROM usuarios WHERE id_usuario = $id_usuario";
+$resultado = $conexion->query($query);
+
+if ($resultado->num_rows == 1) {
+    $fila = $resultado->fetch_assoc();
+    $nombre = $fila['nombres'];
+} else {
+    echo "Error al recuperar el nombre del usuario.";
+    exit();
+}
+
+// El usuario está autenticado, trer sus tareas
 $id_usuario = $_SESSION['id_usuario'];
 $query = "SELECT id_tarea, tarea, estado FROM tareas WHERE id_usuario = $id_usuario";
 $resultado = $conexion->query($query);
@@ -24,7 +38,7 @@ $resultado = $conexion->query($query);
 </head>
 <body>
     <h1>Gestión de Tareas</h1>
-    <p>Bienvenido, Usuario <?php echo $id_usuario; ?>.</p>
+    <p>Bienvenido, <?php echo $nombre; ?>.</p>
     <a href="cerrar_sesion.php">Cerrar Sesión</a>
 
     <h2>Tus Tareas:</h2>
