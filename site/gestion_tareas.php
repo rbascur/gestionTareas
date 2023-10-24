@@ -35,12 +35,11 @@ $resultado = $conexion->query($query);
 <html>
 <head>
     <title>Gestión de Tareas</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
 </head>
 <body>
     <h1>Gestión de Tareas</h1>
     <p>Bienvenido, <?php echo $nombre; ?>.</p>
-    <a href="cerrar_sesion.php">Cerrar Sesión</a>
-
     <h2>Tus Tareas:</h2>
     <ul>
         <?php
@@ -60,6 +59,7 @@ $resultado = $conexion->query($query);
         Tarea: <input type="text" name="tarea"><br>
         Estado: <input type="text" name="estado"><br>
         <input type="submit" value="Agregar Tarea">
+        <p><a href="cerrar_sesion.php">Cerrar Sesión</a></p
     </form>
 </body>
 </html>

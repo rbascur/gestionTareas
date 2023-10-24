@@ -43,6 +43,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['id'])) {
 <html>
 <head>
     <title>Editar Tarea</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
 </head>
 <body>
     <h1>Editar Tarea</h1>

@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Registro de Usuarios</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
 </head>
 <body>
     <h1>Registro de Usuarios</h1>

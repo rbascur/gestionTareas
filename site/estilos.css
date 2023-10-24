@@ -1,0 +1,140 @@
+/* Establecer un color de fondo para todo el cuerpo del sitio */
+body {
+    background-color: #f7f4f3;
+    font-family: Arial, sans-serif;
+}
+
+/* Encabezado */
+header {
+    background-color: #ba7264;
+    color: #fff;
+    padding: 10px;
+}
+
+/* Menús o barras de navegación */
+nav {
+    background-color: #ba7264;
+    color: #fff;
+}
+
+/* Enlaces */
+a {
+    color: #ba7264;
+    text-decoration: none;
+}
+
+/* Botones o botones de acción */
+.button {
+    background-color: #ba7264;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Formularios y entradas de texto */
+input[type="text"], input[type="password"] {
+    padding: 10px;
+    border: 1px solid #ba7264;
+}
+
+/* Estilo de tabla */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table, th, td {
+    border: 1px solid #ba7264;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+/* Resaltar elementos al pasar el ratón sobre ellos */
+a:hover, .button:hover {
+    background-color: #925d53;
+}
+
+/* --------------*/
+
+/* Estilos para campos de formulario */
+input[type="text"],
+input[type="password"],
+textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+/* Estilos para botones */
+.button {
+    background-color: #ba7264;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Cambiar el color de fondo al pasar el ratón sobre los botones */
+.button:hover {
+    background-color: #925d53;
+}
+
+/* Estilos para enlaces */
+a {
+    color: #ba7264;
+    text-decoration: none;
+}
+
+/* Cambiar el color al pasar el ratón sobre los enlaces */
+a:hover {
+    color: #925d53;
+}
+
+/* Estilos para la distribución de elementos en la página */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #ba7264;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Estilos para la barra de navegación */
+nav {
+    background-color: #ba7264;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Estilos para la tabla */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table, th, td {
+    border: 1px solid #ba7264;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+/* Alineación de texto centrada */
+.text-center {
+    text-align: center;
+}

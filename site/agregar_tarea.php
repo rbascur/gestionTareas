@@ -27,6 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['tarea']) && isset($_PO
 <html>
 <head>
     <title>Agregar Tarea</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
 </head>
 <body>
     <h1>Agregar Tarea</h1>
